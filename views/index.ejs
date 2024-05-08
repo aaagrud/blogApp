@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs"); %>
+
+<div class="posts middle">
+    <% posts.forEach(post => { %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%= post.title %></h5>
+              <p class="card-text"><%= post.content %></p>
+              <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+                <button type="submit" class="btn btn-primary">Delete</button>
+              </form>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+<%- include("partials/footer.ejs"); %>
