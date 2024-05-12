@@ -29,7 +29,7 @@ After installing the dependencies, you can start the application using `node ind
 
 ## Screenshots
 ![image](https://github.com/aaagrud/blogApp/assets/118443621/114dc392-023e-4524-bd09-034d6c32c400)
-![image](https://github.com/aaagrud/blogApp/assets/118443621/c0f0bb25-2e6e-4bc4-b09f-e49e5aeb7926)
+![image](https://github.com/aaagrud/blogApp/assets/118443621/7292198f-9462-44e8-bddc-05eef4ab5815)
 ![image](https://github.com/aaagrud/blogApp/assets/118443621/b393717b-3bfe-48ec-9286-e73756219228)
 
 
