@@ -9,10 +9,16 @@
         <div class="card-body">
           <h5 class="card-title"><%= post.title %></h5>
           <p class="card-text"><%= post.content %></p>
-          <form id = "delete-form" action="/" method="post">
-            <input type="hidden" name="m" value="<%= m %>">
-            <button type="submit" class="btn btn-primary">Delete</button>
-          </form>
+          <div class = "buttons">
+            <form id = "delete-form" action="/" method="post">
+              <input type="hidden" name="m" value="<%= m %>">
+              <button type="submit" class="btn btn-primary">Delete</button>
+            </form>
+            <form id="edit-form" action="/edit" method="post">
+              <input type="hidden" name="m" value="<%= m %>">
+              <button type="submit" class="btn btn-primary">Edit</button>
+            </form>
+          </div>
         </div>
       </div> 
     <% }); %>
