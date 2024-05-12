@@ -1,17 +1,19 @@
 <%- include("partials/header.ejs"); %>
 
 
-<div class = "middle">
+<div class = "middle create-middle">
+  <div class = "card" style="width: 18rem;">
     <form action="/create" method="post">
-        <div class="mb-3">
-          <label for="title" class="form-label">Title</label>
-          <input type="text" id="title" name="title" required class="form-control">
-        </div>
-        <div class="mb-3">
-          <label for="content" class="form-label">Content</label>
-          <textarea id="content" class = "form-control" name="content" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Create Post</button>
-    </form>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" id="title" name="title" required class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="content" class="form-label">Content</label>
+        <textarea id="content" class = "form-control" name="content" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Post</button>
+  </form>
+  </div>
 </div>
 <%- include("partials/footer.ejs"); %>
