@@ -9,7 +9,8 @@
 
 .middle{
     flex: 1;
-    padding-top: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 html, body {
@@ -19,8 +20,8 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+
 footer {
-    text-align: center;
     padding: 10px 0;
 }
 
