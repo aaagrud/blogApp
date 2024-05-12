@@ -6,7 +6,7 @@ This is a simple blog web application built with Node.js, Express.js, EJS, CSS, 
 
 - Create new blog posts
 - Delete existing blog posts
-- Edit blog posts (to be added)
+- Edit blog posts 
 
 
 
@@ -28,7 +28,8 @@ After installing the dependencies, you can start the application using `node ind
 
 
 ## Screenshots
-![image](https://github.com/aaagrud/blogApp/assets/118443621/d9214f6e-99d2-4aec-915c-b77f894dd609)
-![image](https://github.com/aaagrud/blogApp/assets/118443621/ec7ecb7d-e92b-452e-822e-37faad9ab550)
-![image](https://github.com/aaagrud/blogApp/assets/118443621/bfce8ca6-58f5-4b68-abf7-ae40cf529eb4)
+![image](https://github.com/aaagrud/blogApp/assets/118443621/114dc392-023e-4524-bd09-034d6c32c400)
+![image](https://github.com/aaagrud/blogApp/assets/118443621/c0f0bb25-2e6e-4bc4-b09f-e49e5aeb7926)
+![image](https://github.com/aaagrud/blogApp/assets/118443621/b393717b-3bfe-48ec-9286-e73756219228)
+
 
