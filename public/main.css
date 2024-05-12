@@ -27,7 +27,9 @@ footer {
 .github{
     width: 1em;
 }
-
+.middle{
+    background-image: url("https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
 form{
     display: flex;
     align-items: center;
@@ -40,5 +42,5 @@ h1{
 
 .buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
