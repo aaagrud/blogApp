@@ -7,6 +7,26 @@
     gap: 2em;
 }
 
+.middle{
+    flex: 1;
+    padding-top: 1em;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.github{
+    width: 1em;
+}
 
 form{
     display: flex;
@@ -16,4 +36,9 @@ form{
 
 h1{
     text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
 }

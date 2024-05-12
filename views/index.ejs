@@ -1,17 +1,35 @@
 <%- include("partials/header.ejs"); %>
 
 <div class="posts middle">
+  <%let m = 0%>
+  <%if(locals.posts && posts.length != 0){%>
     <% posts.forEach(post => { %>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title"><%= post.title %></h5>
-              <p class="card-text"><%= post.content %></p>
-              <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
-                <button type="submit" class="btn btn-primary">Delete</button>
-              </form>
-            </div>
+      <div class="card" id = <%= m%> style="width: 18rem;">
+        <%m = m + 1%>
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title %></h5>
+          <p class="card-text"><%= post.content %></p>
+          <form id = "delete-form" action="/" method="post">
+            <input type="hidden" name="m" value="<%= m %>">
+            <button type="submit" class="btn btn-primary">Delete</button>
+          </form>
         </div>
+      </div> 
     <% }); %>
+  <%} else {%>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">No Entries found!</h5>
+        <p class="card-text">Fix that by clicking create.</p>
+        <div class = "buttons">
+          <form id = "create-form" action="/create" method="get">
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+          <a href="https://github.com/aaagrud/blogApp" class="btn btn-primary">Repo <img src="github.svg" class = "github" alt="hehe"></a>
+        </div>
+      </div>
+    </div>
+  <%}%>
 </div>
 
 <%- include("partials/footer.ejs"); %>

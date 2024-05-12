@@ -13,6 +13,14 @@ app.get("/", (req, res) => {
     res.render("index.ejs", {posts});
 });
 
+app.post("/", (req, res) => {
+    const indexToDelete = req.body.m;
+    if (indexToDelete !== undefined) {
+        posts.splice(indexToDelete - 1, 1);
+    }
+    res.redirect('/');
+});
+
 app.get("/create", (req, res) => {
     res.render("create.ejs");
 });
@@ -22,15 +30,6 @@ app.post("/create", (req, res) => {
     const newPost = { title, content };
     posts.push(newPost);
     res.redirect('/');
-    console.log(posts);
-});
-
-app.get("/edit", (req, res) => {
-    res.render("edit.ejs");
-});
-
-app.get("/delete", (req, res) => {
-    res.render("delete.ejs");
 });
 
 app.listen(port, () => {
